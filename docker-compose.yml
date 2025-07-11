@@ -1,0 +1,118 @@
+version: '3.9'
+
+services:
+  etcd:
+    container_name: milvus-etcd
+    image: quay.io/coreos/etcd:v3.5.15
+    environment:
+      - ETCD_AUTO_COMPACTION_MODE=revision
+      - ETCD_AUTO_COMPACTION_RETENTION=1000
+      - ETCD_QUOTA_BACKEND_BYTES=4294967296
+      - ETCD_SNAPSHOT_COUNT=50000
+    volumes:
+      - ./volumes/etcd:/etcd
+    command: etcd -advertise-client-urls=http://0.0.0.0:2379 -listen-client-urls http://0.0.0.0:2379 --data-dir /etcd
+    healthcheck:
+      test: ["CMD", "etcdctl", "endpoint", "health"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+    networks:
+      - milvus
+
+  minio:
+    container_name: milvus-minio
+    image: minio/minio:latest
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    ports:
+      - "127.0.0.1:9000:9000"
+      - "127.0.0.1:9001:9001"
+    command: server /mnt/minio --console-address ":9001"
+    volumes:
+      - ./volumes/minio:/mnt/minio
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+    networks:
+      - milvus
+
+  milvus-standalone:
+    container_name: milvus-standalone
+    image: milvusdb/milvus:v2.4.8
+    command: ["milvus", "run", "standalone"]
+    environment:
+      - ETCD_ENDPOINTS=milvus-etcd:2379
+      - MINIO_ADDRESS=milvus-minio:9000
+      - MINIO_ACCESS_KEY=minioadmin
+      - MINIO_SECRET_KEY=minioadmin
+      - MINIO_BUCKET_NAME=multi-agent-rag-data
+      - MINIO_ROOT_PATH=milvus-data
+      - MINIO_USE_SSL=false
+      - common.storageType=minio
+      - minio.bucketName=multi-agent-rag-data
+      - minio.accessKeyID=minioadmin
+      - minio.secretAccessKey=minioadmin
+      - MILVUS_LOG_LEVEL=debug
+      - rootCoord.minSegmentSizeToEnableIndex=1024
+      - proxy.http.enabled=true
+    volumes:
+      - ./volumes/milvus:/var/lib/milvus
+    ports:
+      - "127.0.0.1:19530:19530"
+      - "127.0.0.1:9091:9091"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9091/healthz"]
+      interval: 30s
+      timeout: 20s
+      retries: 10
+      start_period: 180s
+    depends_on:
+      etcd:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+    networks:
+      - milvus
+
+  attu:
+    container_name: attu
+    image: zilliz/attu:v2.4.3
+    environment:
+      - MILVUS_URL=milvus-standalone:19530
+    ports:
+      - "127.0.0.1:8002:3000"
+    depends_on:
+      milvus-standalone:
+        condition: service_healthy
+    networks:
+      - milvus
+
+  redis:
+    container_name: milvus-redis
+    image: redis:7.2-alpine
+    ports:
+      - "127.0.0.1:6379:6379"
+    volumes:
+      - ./volumes/redis:/data
+    command: redis-server --save 60 1 --loglevel warning
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - milvus
+
+volumes:
+  etcd:
+  minio:
+  milvus:
+  redis:
+
+networks:
+  milvus:
+    driver: bridge
