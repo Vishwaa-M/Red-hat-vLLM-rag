@@ -1,0 +1,18 @@
+[
+  {
+    "doc_id": "4d62a355-cc15-4b45-bc43-cd804791900a",
+    "summary": "Linux Bash commands serve as essential utilities for file and process management.",
+    "content_type": "text",
+    "source": "multimodal_summarization",
+    "original_source": "doc1",
+    "page_number": 1
+  },
+  {
+    "doc_id": "e207f0c3-3223-4da2-99df-78e278edc5cb",
+    "summary": "The table presents two individuals, Alice and Bob, with their respective ages. Alice is 25 years old, while Bob is 30 years old.",
+    "content_type": "table",
+    "source": "multimodal_summarization",
+    "original_source": "doc2",
+    "page_number": 1
+  }
+]

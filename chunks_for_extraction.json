@@ -1,0 +1,884 @@
+[
+  {
+    "doc_id": "419496fe-5cf3-47fa-a7ca-aeaf589a7963",
+    "parent_doc_id": "d6e1d150-4c6d-4832-b5e4-3fd201927861",
+    "content_type": "table",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 6,
+    "chunk_size": 226,
+    "content_preview": "| $ sudo dnf history undo last Updating Subscription Management repositories. Last metadata expiration check: 3:47:28 ago on Wed 02 Feb 2022 05:08:48   | $ sudo dnf history undo last Updating Subscrip..."
+  },
+  {
+    "doc_id": "8f4097c7-01c0-40ca-887b-36908794dccb",
+    "parent_doc_id": "09a07fc3-f512-46d2-8634-ffa6118cba50",
+    "content_type": "table",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 10,
+    "chunk_size": 96,
+    "content_preview": "| guest_u      | user   | s0   | s0             | guest_r                                |\n|--------------|--------|------|----------------|----------------------------------------|\n| root         | u..."
+  },
+  {
+    "doc_id": "7bcdbbf7-9860-471c-ac34-8db0adf3bb6d",
+    "parent_doc_id": "e9bf8add-a1e8-4af0-91ae-322824f6a70f",
+    "content_type": "table",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 4,
+    "chunk_size": 119,
+    "content_preview": "| Notation                     | Description                                              |\n|------------------------------|----------------------------------------------------------|\n| q y D q, F P f..."
+  },
+  {
+    "doc_id": "52798fa9-3d89-4f46-aa43-8f28ae01fc5c",
+    "parent_doc_id": "4fc0db39-d249-4381-98d3-0320519a6393",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 1,
+    "chunk_size": 332,
+    "content_preview": "Cheat sheet Bash commands A Bash script is a text file that contains programming statements that execute commands that are part of the host computer's operating system. Typically system administrators..."
+  },
+  {
+    "doc_id": "213787e8-fde1-4556-ba5a-670b2d9b0bca",
+    "parent_doc_id": "10f1c1dd-f5bf-49c2-8d20-acd3188e9356",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 2,
+    "chunk_size": 239,
+    "content_preview": "#!/usr/bin/bash The shebang shown above tells the operating system to use the interpreter located at the filepath /usr/bin/bash to execute the lines of code that will follow in the script. /usr/bin/ba..."
+  },
+  {
+    "doc_id": "7239f106-cb49-495e-a82b-1cfad8e1bff0",
+    "parent_doc_id": "aef01898-d4f6-4541-8674-c8dadab397ed",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 3,
+    "chunk_size": 207,
+    "content_preview": "BE CAREFUL to make sure there is no space on either side of the = symbol when declaring a variable. The following will not work: MYVARIABLE = foo. = MYVARIABLE = foo String manipulation using paramete..."
+  },
+  {
+    "doc_id": "8dd650d1-511a-4642-8593-0091d5dd9f76",
+    "parent_doc_id": "be9b239a-b807-46da-a343-31a4fb12553d",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 4,
+    "chunk_size": 159,
+    "content_preview": "Replace all numeric characters with the character Z but leave alphabetic characters alone Z MSG=\"I need 10\" echo ${MSG//[0-9]/Z} #returns I need ZZ Extracting substrings Use the : symbol to get the su..."
+  },
+  {
+    "doc_id": "0c9c2fd8-5751-4bb4-8a73-f4c3da69e9bd",
+    "parent_doc_id": "3e7011e1-fe28-447f-b728-51e63ef26c17",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 5,
+    "chunk_size": 153,
+    "content_preview": "Use the ^^ symbols to convert the all lowercase characters in a string to uppercase. ^^ MSG=\"aBcDeFg\" echo ${MSG^^} #returns ABCDEFG Use the ,  symbol to convert the first character in a string to low..."
+  },
+  {
+    "doc_id": "729bef17-0b9f-4217-b507-1a8958e8e948",
+    "parent_doc_id": "0a80431a-3ec6-4896-9212-7e277172a188",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 6,
+    "chunk_size": 202,
+    "content_preview": "Adding an element to an array The following uses the += operator to add an element with the value Soto to the array named my_array. my_array Soto += my_array+=('Soto') Removing an element to an array ..."
+  },
+  {
+    "doc_id": "b47c5b96-bf1e-4f49-b41b-5178c88cb46e",
+    "parent_doc_id": "b83b7c8d-476f-495b-a737-1ae285977964",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 7,
+    "chunk_size": 204,
+    "content_preview": "cat << 'EOF' > arrays-01.sh #!/usr/bin/env bash names=('Alex' 'Ada' 'Alexandra') names+=('Soto') # Appends element, Soto unset names[3] # Removes element at index 3, (Soto) echo ${names[0]} # Alex ech..."
+  },
+  {
+    "doc_id": "2d0ab267-ced6-45d5-bb4d-dc89db4b1d02",
+    "parent_doc_id": "49a96e0d-a49e-4322-be98-3d1855238193",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 8,
+    "chunk_size": 215,
+    "content_preview": "The following example demonstrates using the unset keyword to delete the element identified by the key chris from the map variable named score. unset score chris unset score[chris] # Delete chris entr..."
+  },
+  {
+    "doc_id": "80f7e735-0901-45a8-ac0a-cc135e316de5",
+    "parent_doc_id": "55cf687a-faf4-4356-929b-3e4c7692d9ff",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 9,
+    "chunk_size": 214,
+    "content_preview": "Basic function syntax The following demonstrates basic function syntax. The function is named printmessages. The function uses the echo command to send two messages to standard output. printmessages p..."
+  },
+  {
+    "doc_id": "19ad1ddc-15ac-4f43-a45b-34d2babd7e7f",
+    "parent_doc_id": "359d13b5-ca4e-4c00-ac18-187217d5a02a",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 10,
+    "chunk_size": 157,
+    "content_preview": "cat << 'EOF' > function-example-02.sh #!/usr/bin/env bash helloworld() { echo \"Hello World from $1\" } # call the function helloworld \"Alex\" EOF bash function-example-02.sh Returns Hello World from Ale..."
+  },
+  {
+    "doc_id": "3cb9bff2-42b1-4628-9627-ea08d54156b0",
+    "parent_doc_id": "661b1e95-4ba6-452b-a4b7-a525d8a03f88",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 11,
+    "chunk_size": 191,
+    "content_preview": "cat << 'EOF' > function-04.sh set_favorite_food(){ favorite_food=$1 } favorite_food=\"apples\" echo $favorite_food set_favorite_food \"cheese\" echo $favorite_food EOF bash function-04.sh Returns apples c..."
+  },
+  {
+    "doc_id": "e2d77ca2-be9e-490a-b5da-9ecc7f988520",
+    "parent_doc_id": "d552f708-1373-4633-8481-d4dcd5076f37",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 12,
+    "chunk_size": 179,
+    "content_preview": "mynum=$RANDOM echo $mynum if [ $(expr $mynum % 2) == \"0\" ]; then echo even else echo odd fi Copy, paste and run in your terminal: Copy and paste the following code into your terminal window to create ..."
+  },
+  {
+    "doc_id": "cedfe3df-2671-4208-b447-83310985e628",
+    "parent_doc_id": "48957957-4d26-41f1-9ff6-d24999f58e1c",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 13,
+    "chunk_size": 139,
+    "content_preview": "cat << 'EOF' > conditional-example-02.sh #!/usr/bin/env bash mystring=$1 positive_indicator=\" like \" negative_indicator=\" don't \" if [[ (\"$mystring\" == *\"$positive_indicator\"* ) && ( \"$mystring\" != *\"..."
+  },
+  {
+    "doc_id": "de8a1352-2671-4630-b54e-f0ec2279a9e8",
+    "parent_doc_id": "5ebc92b1-26b6-42d3-9ec4-3cbef9ba0b4d",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 14,
+    "chunk_size": 181,
+    "content_preview": "Looping is a technique that enables Bash scripts to run programming statements and expressions continuously. The following sections describe different types of loops. Range The following code demonstr..."
+  },
+  {
+    "doc_id": "355a5962-6dcd-4d2e-9b0c-e0312803bf30",
+    "parent_doc_id": "1020fa60-dc98-4f09-97cb-4ea3caf5b0bb",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 15,
+    "chunk_size": 120,
+    "content_preview": "Print keys of all elements from a key/value array: for key in \"${!score[@]}\"; do echo $key done Copy, paste and run in your terminal: Copy and paste the code to run a Bash script that prints all the e..."
+  },
+  {
+    "doc_id": "c19e79d5-6229-4911-98bc-cb6c42706062",
+    "parent_doc_id": "936819b1-09b7-420e-904a-2ee7b579eb7c",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 16,
+    "chunk_size": 182,
+    "content_preview": "Get all files in a directory sub-directories The following script gets all files in the directory /tmp that have the extension .log: /tmp .log for i in /tmp/*.log; do echo $i done Copy, paste and run ..."
+  },
+  {
+    "doc_id": "aef52eb7-bead-4382-b882-cf734b7c533b",
+    "parent_doc_id": "6aa41d20-6766-4da2-9d54-0a9ecd001b26",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 17,
+    "chunk_size": 195,
+    "content_preview": "x=1; while [ $x -le 5 ]; do echo \"Hello World\" ((x=x+1)) done Copy, paste and run in your terminal: Copy and paste the following code to create and run a Bash script that demonstrates a while loop. wh..."
+  },
+  {
+    "doc_id": "89435119-174b-4557-966e-f620e58fb278",
+    "parent_doc_id": "8b3bf45f-aa88-4b5e-bed5-aa3e05785e65",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/Bash-commands-cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 18,
+    "chunk_size": 149,
+    "content_preview": "cat << 'EOF' > status-code-01.sh #!/usr/bin/env bash if [ -z \"$1\" ]; then echo \"No parameter\"; exit 22; fi EOF bash status-code-01.sh echo $? Returns 22 Return a status value from a function The follo..."
+  },
+  {
+    "doc_id": "012718f8-c314-4ad6-a596-a5b9e20dcab4",
+    "parent_doc_id": "28975933-9fbe-4dc9-b505-2fb1c65ac1c8",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 1,
+    "chunk_size": 278,
+    "content_preview": "Cheat sheet RHEL 8 Version 8 of Red Hat Enterprise Linux (RHEL) provides an upgraded package manager that replaces the classic yum yum application. This new package manager is named  dnf , which is an..."
+  },
+  {
+    "doc_id": "0e3e8b9f-ef64-41fe-a42d-a6fd51e7a511",
+    "parent_doc_id": "96a4093f-93a2-4de6-b9b0-3ad15f375842",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 2,
+    "chunk_size": 300,
+    "content_preview": "$ sudo dnf search perl-MAIL Updating Subscription Management repositories. Last metadata expiration check: 3:35:27 ago on Wed 02 Feb 2022 05:08:48 AM PST. ========================== Name Matched: perl..."
+  },
+  {
+    "doc_id": "6f5a9a07-53e2-4477-be89-b638e1e13599",
+    "parent_doc_id": "f5d1d680-9c83-40bc-be10-b60459392b49",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 3,
+    "chunk_size": 245,
+    "content_preview": "Summary      : .NET CLI tools and runtime URL          : https://github.com/dotnet/ License      : MIT and ASL 2.0 and BSD and LGPLv2+ and CC-BY and CC0 and MS-PL and EPL-1.0 and GPL+ and GPLv2 and IS..."
+  },
+  {
+    "doc_id": "f10a8a85-52ec-46a8-9328-67684dbb131f",
+    "parent_doc_id": "2c67f19c-5519-422d-a89f-457a225bb4fd",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 4,
+    "chunk_size": 169,
+    "content_preview": "Removes a module from the local machine. Example: The following command removes the podman application from the local computer. The command uses the -y option to allow installation to proceed without ..."
+  },
+  {
+    "doc_id": "67d1f191-cd08-421d-8477-54610947e8e6",
+    "parent_doc_id": "93f8c7bc-e27d-4f2b-b873-076eb230451c",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 5,
+    "chunk_size": 248,
+    "content_preview": "Erasing          : conmon-2:2.0.29-1.module+el8.5.0+12582+56d94c81.x86_64 4/4 Running scriptlet: conmon-2:2.0.29-1.module+el8.5.0+12582+56d94c81.x86_64 Verifying        : cockpit- podman-33-1.module+e..."
+  },
+  {
+    "doc_id": "f3b79276-0157-4b5f-acf6-58e95c1deeda",
+    "parent_doc_id": "837b0986-8bfa-44ad-934c-4c160cd9a99a",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 6,
+    "chunk_size": 37,
+    "content_preview": "The following command uses sudo dnf history   undo last to undo the most recent action, which in this case is the installation of the dotnet module. The example shows a portion of the screen output: d..."
+  },
+  {
+    "doc_id": "b8eda20d-f138-4f9e-92bd-f3c4319aa4c2",
+    "parent_doc_id": "0bbd047f-baba-402b-b8b7-c92162d1b543",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 6,
+    "chunk_size": 11,
+    "content_preview": "dnf list dnf list <subcommand> [options] Lists modules on the system."
+  },
+  {
+    "doc_id": "62472cf6-d7b1-4492-89af-38c71b958712",
+    "parent_doc_id": "47c9c99c-1465-486e-9abb-27db857adc13",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 7,
+    "chunk_size": 188,
+    "content_preview": "Example: The following command uses the installed    subcommand to list installed modules. The result is piped to the more command, which shows the first 15 lines of output using the -15   option: ins..."
+  },
+  {
+    "doc_id": "173778ae-aa82-4eae-8deb-0fbe3e40a687",
+    "parent_doc_id": "911730ef-c969-49a5-ac0c-1174208e254a",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 8,
+    "chunk_size": 226,
+    "content_preview": "NetworkManager-config-server.noarch          1:1.32.10-4.el8 @anaconda NetworkManager-libnm.x86_64                  1:1.32.10-4.el8 NetworkManager-team.x86_64                   1:1.32.10-4.el8 @anacon..."
+  },
+  {
+    "doc_id": "2542002d-21a4-4895-8094-e7ac0d64faa0",
+    "parent_doc_id": "d2c28c69-604d-43a5-99f5-f123deb16ba0",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 9,
+    "chunk_size": 222,
+    "content_preview": "$ subscription-manager repos You are attempting to run \"subscription-manager\" which requires administrative privileges, but more information is needed in order to do so. Authenticating as \"root\" Passw..."
+  },
+  {
+    "doc_id": "ec1c888a-9f22-4743-abd9-12b2c96665fd",
+    "parent_doc_id": "81c87bc9-7fee-4ff8-bf2d-ea6c93a91b6c",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 10,
+    "chunk_size": 214,
+    "content_preview": "Working with Application Streams Red Hat Enterprise Linux 8 supports application streams. Application streaming is a type of on-demand software distribution allowing easy access to several versions of..."
+  },
+  {
+    "doc_id": "a78117df-1544-45cf-bb79-91410356db5f",
+    "parent_doc_id": "a3db5b5b-197c-4f3a-9b2f-c1629c68f9f3",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 11,
+    "chunk_size": 203,
+    "content_preview": "$ sudo dnf module info redis:5:820181217094919:9edba152:x86_64 Updating Subscription Management repositories. Last metadata expiration check: 0:10:55 ago on Tue 08 Feb 2022 09:25:36 AM PST. Name      ..."
+  },
+  {
+    "doc_id": "60b121bb-daa7-4f20-8c87-4325e672a182",
+    "parent_doc_id": "bf466797-cbe5-447f-8b4a-82748942cfac",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 12,
+    "chunk_size": 231,
+    "content_preview": "$ sudo dnf module list --installed Updating Subscription Management repositories. Last metadata expiration check: 1:46:30 ago on Wed 09 Feb 2022 08:06:21 AM PST. Red Hat Enterprise Linux 8 for x86_64 ..."
+  },
+  {
+    "doc_id": "6e5d5e9c-4f49-4452-876a-371ac38fd73d",
+    "parent_doc_id": "03c8d2c1-3558-4b12-be65-6225d368a67b",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 13,
+    "chunk_size": 150,
+    "content_preview": "Example: The following command enables stream 2.10 of the scala   module: scala $ sudo dnf module enable scala:2.10 Updating Subscription Management repositories. Last metadata expiration check: 0:18:..."
+  },
+  {
+    "doc_id": "5234909b-0be0-4039-9317-804ffd3c61a7",
+    "parent_doc_id": "4938bbd6-fd5f-4fc0-a777-92090ade25ca",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 14,
+    "chunk_size": 129,
+    "content_preview": "1:1.8.0.322.b06-2.el8_5                @rhel-8-for-x86_64-appstream-rpms 841 k java-1.8.0-openjdk-devel           x86_64 1:1.8.0.322.b06-2.el8_5                @rhel-8-for-x86_64-appstream-rpms 41 M t..."
+  },
+  {
+    "doc_id": "c5664864-21a9-4c39-9b35-b105ce06d3ef",
+    "parent_doc_id": "782c3d80-ff71-43e6-8a8d-ae5077ee5504",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 15,
+    "chunk_size": 202,
+    "content_preview": "dnf module disable <module_name:stream> Disables a particular stream of a module. Disabling a module removes the previously enabled access to the repository packages in that module stream. Example: Th..."
+  },
+  {
+    "doc_id": "06318e0d-bdf2-41aa-9e38-59e8e9fb7c3a",
+    "parent_doc_id": "96e0d7df-8704-4c3e-9924-930803c80761",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 16,
+    "chunk_size": 186,
+    "content_preview": "$ sudo dnf module switch-to nodejs:16 -y Updating Subscription Management repositories. Last metadata expiration check: 2:14:26 ago on Wed 09 Feb 2022 08:06:21 AM PST. Dependencies resolved. =========..."
+  },
+  {
+    "doc_id": "d1e3e09f-7707-43aa-a917-38bf43f7f0c6",
+    "parent_doc_id": "bc2e5f29-4ad2-4a34-82f4-215b2c6fdddc",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 17,
+    "chunk_size": 161,
+    "content_preview": "$ node --version v10.24.0 $ sudo dnf module reset nodejs -y . . . Disabling module profiles: nodejs/common Resetting modules: nodejs Transaction Summary ================================== Complete! $ ..."
+  },
+  {
+    "doc_id": "1ee2de9e-55ad-41ff-bac2-b1dc7a3f7acd",
+    "parent_doc_id": "c9ed89cf-738a-4825-9c37-1bd2ddf1d861",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 18,
+    "chunk_size": 203,
+    "content_preview": "The following command installs the llvm-toolset   package, which includes the LLVM compiler infrastructure framework, the Clang compiler for the C and C++ languages, the LLDB debugger, and related too..."
+  },
+  {
+    "doc_id": "dd444738-2c0b-46aa-b3ff-0c3773ba33e5",
+    "parent_doc_id": "57fc67c8-0c2c-4096-b26b-a6296b265af2",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 19,
+    "chunk_size": 195,
+    "content_preview": "The following command installs version 11 of the Java Development Kit: sudo dnf install java-11-openjdk-devel sudo dnf install java-1.8.0-openjdk-devel The following command installs version 8 of the ..."
+  },
+  {
+    "doc_id": "cdc4abb7-d2f6-46f6-933f-9c66e1b0b11d",
+    "parent_doc_id": "33f75bac-c455-477e-9024-3e587358b8ee",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/RHEL-8-Cheat-sheet-Red-Hat-Developer.pdf",
+    "page_number": 20,
+    "chunk_size": 71,
+    "content_preview": "sudo dnf install systemtap The following command installs the SystemTap tool, which allows users to study and monitor the activities of the operating system (particularly, the kernel) in fine detail: ..."
+  },
+  {
+    "doc_id": "41fb5355-e3ea-4ad0-a438-c46bfac95bc1",
+    "parent_doc_id": "bc84046a-ac23-4eb7-9dc5-b9a63cc0df37",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 1,
+    "chunk_size": 360,
+    "content_preview": "Advanced Linux Commands Cheat Sheet This cheat sheet presents a collection of Linux commands and shows how they are used by developers in advanced programming scenarios. The commands are organized by ..."
+  },
+  {
+    "doc_id": "432fed54-f0e8-4cd2-abc1-16eb44b88904",
+    "parent_doc_id": "4c07d991-d399-480c-888f-4d6efc934a59",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 2,
+    "chunk_size": 371,
+    "content_preview": "type=PROCTITLE msg=audit(1641598972.761:6): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573 type=SYSCALL msg=audit(1641598972.761:6): arch=c000003e syscall=4..."
+  },
+  {
+    "doc_id": "4d3dab81-87fe-43de-b252-0d624585bfb6",
+    "parent_doc_id": "916ebe40-8159-4175-9e75-107ac557049d",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 3,
+    "chunk_size": 382,
+    "content_preview": "I/O size (minimum/optimal): 512 bytes / 512 bytes Disk /dev/mapper/rhel-home: 23.3 GiB, 25044189184 bytes, 48914432 sectors Units: sectors of 1 * 512 = 512 bytes Sector size (logical/physical): 512 by..."
+  },
+  {
+    "doc_id": "ab7c4730-7397-42cc-951c-56329e415998",
+    "parent_doc_id": "942d5624-4449-4ff9-a95d-d590ef059220",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 4,
+    "chunk_size": 381,
+    "content_preview": "- check for inodes claiming duplicate blocks... - agno = 0 - agno = 1 - agno = 2 - agno = 3 Phase 5 - rebuild AG headers and trees... - reset superblock... Phase 6 - check inode connectivity... - rese..."
+  },
+  {
+    "doc_id": "33749474-5132-46a2-9a62-7fe4e0f6c04d",
+    "parent_doc_id": "94f180b2-d911-43ac-bb64-9e7760c4fe32",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 5,
+    "chunk_size": 344,
+    "content_preview": "JOB COMMANDS Commands in this section apply to working with jobs running under the Linux operating system. A job is a process that is invoked from a terminal window process and is considered a child o..."
+  },
+  {
+    "doc_id": "315dd1d6-b9cf-4ad1-8381-ddbd8f9d361e",
+    "parent_doc_id": "48ead63f-97eb-4cf6-82ec-a525fb452dd2",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 6,
+    "chunk_size": 313,
+    "content_preview": "MEMORY MANAGEMENT COMMANDS The following command applies to working with memory on a computer running the Linux operating system. free This command reports information about memory status on the local..."
+  },
+  {
+    "doc_id": "3db4b044-70ea-443d-b435-1910c788d3ac",
+    "parent_doc_id": "831efc23-4e0a-4689-9d3e-d469cdd1cd70",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 7,
+    "chunk_size": 297,
+    "content_preview": "hostnamectl [options] <command> The command hostnamectl is similar to the command hostname but with added capabilities. Example: The following example invokes and displays the result of the hostnamect..."
+  },
+  {
+    "doc_id": "7a0debd6-f889-42e4-a67b-b19c8c56fbdf",
+    "parent_doc_id": "5ab6eaf5-41f6-4378-96f0-4270d28b25c2",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 8,
+    "chunk_size": 112,
+    "content_preview": "Commands in this section apply to working with Linux processes from the command line. && <command> && <command> Executes commands in a sequence. Example: The following command changes the current dire..."
+  },
+  {
+    "doc_id": "f90128c9-f6c5-4394-909a-3cd500f7e7f2",
+    "parent_doc_id": "5ab6eaf5-41f6-4378-96f0-4270d28b25c2",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 8,
+    "chunk_size": 399,
+    "content_preview": "Example: The following example shows how to invoke iotop to read system IO. A portion of the output is displayed: $ sudo iotop Total DISK READ : 0.00 B/s | Total DISK WRITE :       0.00 B/s Actual DIS..."
+  },
+  {
+    "doc_id": "360668a2-5380-4233-9ca4-b0f8ce725a28",
+    "parent_doc_id": "d95e0573-abb4-4a63-a9d4-f076a4b462a5",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 9,
+    "chunk_size": 356,
+    "content_preview": "root           4  0.0  0.0      0     0 ? I<   Jan07   0:00 [rcu_par_gp] root           6  0.0  0.0      0     0 ? I<   Jan07   0:00 [kworker/0:0H-events_highpri] root           9  0.0  0.0      0    ..."
+  },
+  {
+    "doc_id": "8b45b4aa-8309-4392-8085-2c22b058aabd",
+    "parent_doc_id": "7bad8806-0432-4c67-8759-9ce4ce9b7b26",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 10,
+    "chunk_size": 123,
+    "content_preview": "semanage semanage <object> [options] Allows administrators to manage SELinux capabilities according to the particular object of interest. Each object will have its own set of options. Examples of sema..."
+  },
+  {
+    "doc_id": "a95e6a30-8dde-44c3-a200-aa165b0de4c5",
+    "parent_doc_id": "78bf1b2a-b3f6-4ed2-af02-d84094a8a1c6",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 10,
+    "chunk_size": 234,
+    "content_preview": "This example uses semanage to view a list of login information: $ sudo semanage login -l Login Name           SELinux User         MLS/MCS Range        Service __default__          unconfined_u       ..."
+  },
+  {
+    "doc_id": "a3693b25-6688-483b-bbe8-65ce23fe5a79",
+    "parent_doc_id": "ad277839-356f-4f00-802d-0f8119e51bea",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 11,
+    "chunk_size": 245,
+    "content_preview": "cpu.topology_source: kernel /sys cpu sibling lists distribution.id: Ootpa distribution.name: Red Hat Enterprise Linux distribution.version: 8.5 distribution.version.modifier: Unknown dmi.baseboard.man..."
+  },
+  {
+    "doc_id": "ae0c07bf-7d61-44ca-8000-87653901d10c",
+    "parent_doc_id": "50ddccb7-d9e7-4a2b-ae84-aa18b15b68e4",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 12,
+    "chunk_size": 297,
+    "content_preview": "This command is part of the util-linux package, which you can install using the command: sudo yum install -y util-linux . In some cases, the package is part of the operating system's default installat..."
+  },
+  {
+    "doc_id": "d6f29fb8-5fbc-4672-856a-2c6b88da80a5",
+    "parent_doc_id": "c382fbc2-c2ed-4a8a-999d-56c8ad3177e0",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 13,
+    "chunk_size": 306,
+    "content_preview": "/0/100/6/1        usb2        bus         OHCI PCI host controller /0/100/6/1/1      input5      input       VirtualBox USB Tablet /0/100/7                      bridge      82371AB/EB/MB PIIX4 ACPI /0..."
+  },
+  {
+    "doc_id": "10a12061-bb0a-4146-8c95-97f6629a6b76",
+    "parent_doc_id": "e14764a7-211d-4c7d-ac73-0347ce753476",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/advanced-linux-commands-cheat-sheet-red-hat-developer.pdf",
+    "page_number": 14,
+    "chunk_size": 289,
+    "content_preview": "usermod [options] <username> Modies user account information. The command can be used to add a user to a group. The command must be run as sudo in order to have administrator access. Example: The foll..."
+  },
+  {
+    "doc_id": "42d854e9-1d87-409f-8b31-f02bc58bea0b",
+    "parent_doc_id": "14cc9af9-52e3-46f4-b2b1-b882ad2cec6d",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 1,
+    "chunk_size": 214,
+    "content_preview": "Modular RAG: Transforming RAG Systems into LEGO-like Reconfigurable Frameworks Yunfan Gao, Yun Xiong, Meng Wang, Haofen Wang Abstract -Retrieval-augmented Generation (RAG) has markedly enhanced the ca..."
+  },
+  {
+    "doc_id": "cda9d459-ea2b-4d34-a37e-b80c8028070a",
+    "parent_doc_id": "14cc9af9-52e3-46f4-b2b1-b882ad2cec6d",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 1,
+    "chunk_size": 602,
+    "content_preview": "Finally, the paper explores the potential emergence of new operators and paradigms, establishing a solid theoretical foundation and a practical roadmap for the continued evolution and practical deploy..."
+  },
+  {
+    "doc_id": "3fb5d5db-bba8-4c33-a735-b90c41651e6a",
+    "parent_doc_id": "a6a1b100-d67f-4840-be86-15a909fcc1ba",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 2,
+    "chunk_size": 199,
+    "content_preview": "Fig. 1. Cases of Naive RAG and Advanced RAG.When faced with complex questions, both encounter limitations and struggle to provide satisfactory answers. Despite the fact that Advanced RAG improves retr..."
+  },
+  {
+    "doc_id": "bdcf7e92-25e9-4f1d-9dce-831d38225151",
+    "parent_doc_id": "b197db1d-c49c-4b80-9d10-6a027df7589b",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 3,
+    "chunk_size": 582,
+    "content_preview": "and maintainability. With the increasing complexity of systems, system maintenance and debugging have become more challenging. Additionally, when issues arise, it is essential to quickly pinpoint the ..."
+  },
+  {
+    "doc_id": "5fc4f509-5cf6-445e-b603-b47c1a64cc9b",
+    "parent_doc_id": "b197db1d-c49c-4b80-9d10-6a027df7589b",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 3,
+    "chunk_size": 313,
+    "content_preview": "RELATED WORK The development of RAG technology can be summarized in three stages. Initially, retrieval-augmented techniques were introduced to improve the performance of pre-trained language models on..."
+  },
+  {
+    "doc_id": "5242ece6-68a8-46e8-97b8-50f6d1d7fa5d",
+    "parent_doc_id": "9ca235b3-edbc-4b84-a92f-1dc54c2b584d",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 4,
+    "chunk_size": 272,
+    "content_preview": "Fig. 3. Comparison between three RAG paradigms. Modular RAG has evolved from previous paradigms and aligns with the current practical needs of RAG systems. They emphasize the importance of considering..."
+  },
+  {
+    "doc_id": "c487d039-23aa-49a4-9316-7374f6b64734",
+    "parent_doc_id": "3706030c-22a0-4b02-a46a-2be8df065db9",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 4,
+    "chunk_size": 113,
+    "content_preview": "TABLE I IMPORTANT NOTATION 2) Retrieval . Transform the query into a vector using the same encoding model, and then filter out the top k document chunks that are most similar based on vector similarit..."
+  },
+  {
+    "doc_id": "55c9459b-b9cf-40a1-a1a7-cdf39b327c8c",
+    "parent_doc_id": "9f0aaf2e-6c0c-4282-94ab-f393157cfb59",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 5,
+    "chunk_size": 177,
+    "content_preview": "With the evolution of RAG technology, more and more functional components are being integrated into systems. Modular RAG paradigm includes three levels, ranging from large to small: L1 Module ( M = {M..."
+  },
+  {
+    "doc_id": "07b2f33e-c6ea-49db-a870-e052be29c55c",
+    "parent_doc_id": "9f0aaf2e-6c0c-4282-94ab-f393157cfb59",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 5,
+    "chunk_size": 405,
+    "content_preview": "Based on the current stage of RAG development, we have established six main modules: Indexing, Pre-retrieval, Retrieval, Postretrieval, Generation, and Orchestration. A. Indexing Indexing is the proce..."
+  },
+  {
+    "doc_id": "5235e307-7412-4e2c-b6e2-878e961bc785",
+    "parent_doc_id": "9f0aaf2e-6c0c-4282-94ab-f393157cfb59",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 5,
+    "chunk_size": 342,
+    "content_preview": "In the hierarchical structure of documents, nodes are arranged in parent-child relationships, with chunks linked to them. Data summaries are stored at each node, aiding in the swift traversal of data ..."
+  },
+  {
+    "doc_id": "9365dde4-868b-48f1-9150-952d2cae863c",
+    "parent_doc_id": "3acc7737-0a49-46ef-b04d-13d05d431b14",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 6,
+    "chunk_size": 592,
+    "content_preview": "further context to address any lack of specific nuances, thereby ensuring the optimal relevance of the generated answers. Multi-Query uses prompt engineering to expand queries via LLMs, allowing for p..."
+  },
+  {
+    "doc_id": "4e583ce4-cb08-415a-8825-53be814f166f",
+    "parent_doc_id": "3acc7737-0a49-46ef-b04d-13d05d431b14",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 6,
+    "chunk_size": 286,
+    "content_preview": "Sparse Retriever uses statistical methods to convert queries and documents into sparse vectors. Its advantage lies in its efficiency in handling large datasets, focusing only on non-zero elements. How..."
+  },
+  {
+    "doc_id": "d8ce9315-376f-49c5-ba37-c2b3cc3925a5",
+    "parent_doc_id": "a5f54d27-d728-40a6-a8d9-e7a7dca615ca",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 7,
+    "chunk_size": 100,
+    "content_preview": "lizes the LM-generated results as supervisory signals to finetune the embedding model during the RAG process. P LM ( y d, q | ) is LM probability of the ground truth output y given the input context d..."
+  },
+  {
+    "doc_id": "94188201-371d-436d-9d48-4a6f8b83b495",
+    "parent_doc_id": "a5f54d27-d728-40a6-a8d9-e7a7dca615ca",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 7,
+    "chunk_size": 627,
+    "content_preview": "Another benefit of adding an adapter is the ability to achieve better alignment with specific downstream tasks [42]. D. Post-retrieval Feeding all retrieved chunks directly into the LLM is not an opti..."
+  },
+  {
+    "doc_id": "d27bd6c1-3b5c-4bb0-8d0c-1bdc1da142dd",
+    "parent_doc_id": "a5f54d27-d728-40a6-a8d9-e7a7dca615ca",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 7,
+    "chunk_size": 238,
+    "content_preview": "However, it overlooks the interdependence between compressed content and the alignment between the targeted language model and the small language model utilized for prompting compression [48]. LLM-Cri..."
+  },
+  {
+    "doc_id": "4354fc96-e877-4699-b18f-cf0845584c42",
+    "parent_doc_id": "5789b3ab-dfed-4961-9c45-9257ba3938d5",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 8,
+    "chunk_size": 113,
+    "content_preview": "a potential approach [51]. For instance, manually annotating the final generated answers and then providing feedback through reinforcement learning. In addition to aligning with human preferences, it ..."
+  },
+  {
+    "doc_id": "f513ca1b-fee1-4188-aaca-513a26e70585",
+    "parent_doc_id": "5789b3ab-dfed-4961-9c45-9257ba3938d5",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 8,
+    "chunk_size": 265,
+    "content_preview": "Retrieval likelihood of each retrieved document d is calculated as : P LM ( y d, q | ) is the LM probability of the ground truth output y given the input context d , question q , and \u03b3 is a hyperparam..."
+  },
+  {
+    "doc_id": "f7047720-1580-40cc-8a07-ddd42a340463",
+    "parent_doc_id": "5789b3ab-dfed-4961-9c45-9257ba3938d5",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 8,
+    "chunk_size": 543,
+    "content_preview": "F. Orchestration Orchestration pertains to the control modules that govern the RAG process. Unlike the traditional, rigid approach of a fixed process, RAG now incorporates decision-making at pivotal j..."
+  },
+  {
+    "doc_id": "fd368fa0-0bae-4b64-a3e0-ad6b1a0f93f9",
+    "parent_doc_id": "f170bd69-7192-488b-8150-6a61452658c9",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 9,
+    "chunk_size": 323,
+    "content_preview": "that the system makes informed decisions on when to cease generation or initiate a new retrieval loop. Rule judge. The subsequent steps are dictated by a set of established rules. Typically, the syste..."
+  },
+  {
+    "doc_id": "4dc4aef5-f800-4b5f-ba8e-270082783d84",
+    "parent_doc_id": "f170bd69-7192-488b-8150-6a61452658c9",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 9,
+    "chunk_size": 582,
+    "content_preview": "Specifically, it involves extracting information relevant to the question from a knowledge graph and constructing a reasoning chain. This reasoning chain consists of a series of logically interconnect..."
+  },
+  {
+    "doc_id": "5dc2830f-8ae2-4e3a-82a1-83bcf9e58be1",
+    "parent_doc_id": "c00fa426-6407-4e97-b053-9874b2064061",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 10,
+    "chunk_size": 425,
+    "content_preview": "Fig. 4. Linear RAG flow pattern. Each module is processed in a fixed sequential order. Fig. 5. RRR [24] is a typical linear flow that introduces a learnable query rewrite module before retrieval. This..."
+  },
+  {
+    "doc_id": "cf3f6c45-da3c-4dba-b8ab-190e548a0e2d",
+    "parent_doc_id": "c00fa426-6407-4e97-b053-9874b2064061",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 10,
+    "chunk_size": 257,
+    "content_preview": "Pre-retrieval branching flow pattern.Each branch performs retrieval and generation separately, and then they are aggregated at the end. through a routing module that determines the next module in the ..."
+  },
+  {
+    "doc_id": "fe099a96-4a77-499a-b331-9e94604fd1ca",
+    "parent_doc_id": "cfdec995-b1d7-40b7-9637-dd2572e18b50",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 11,
+    "chunk_size": 215,
+    "content_preview": "Fig. 8. Post-retrieval branching flow pattern.Only one retrieval performed, and then generation is carried out separately for each retrieved document chunks, followed by aggregation. C. Branching In m..."
+  },
+  {
+    "doc_id": "12a6231c-ac57-4c90-9142-cdb55553dcf3",
+    "parent_doc_id": "cfdec995-b1d7-40b7-9637-dd2572e18b50",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 11,
+    "chunk_size": 460,
+    "content_preview": ". For example, after aggregating multiple model responses, they can continue through a validation module. Therefore, the entire branch flow pattern can be represented as: Algorithm 3 Pre-retrieval Bra..."
+  },
+  {
+    "doc_id": "e71e3743-3bf0-48fb-a2b0-9c5c8a70b1a4",
+    "parent_doc_id": "cfdec995-b1d7-40b7-9637-dd2572e18b50",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 11,
+    "chunk_size": 253,
+    "content_preview": "These results are subsequently merged using a merge module M merge to form the final result y . The process can be succinctly represented as y = M merge ( O i ) , where O i is the collection of all ge..."
+  },
+  {
+    "doc_id": "1e27b890-cbbe-4e33-a3be-8938287bde2d",
+    "parent_doc_id": "b8ab0d15-a59f-4afa-a685-2acb56d68559",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 12,
+    "chunk_size": 776,
+    "content_preview": "Fig. 9. The RAG flow in REPLUG [55], which follows a typical post-retrieval branching pattern. Each retrieved chunks undergoes parallel generation, and then they are aggregated using a weighted probab..."
+  },
+  {
+    "doc_id": "f4331e1c-4180-41eb-87bb-57b52c95f6e7",
+    "parent_doc_id": "b8ab0d15-a59f-4afa-a685-2acb56d68559",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 12,
+    "chunk_size": 247,
+    "content_preview": "Fig. 10. Loop flow pattern. Typically, a RAG system performs multiple rounds of retrieval and generation. It can be categorized into three forms: iterative, recursive, and adaptive. Algorithm 5 Iterat..."
+  },
+  {
+    "doc_id": "46156f01-a825-4805-a1ec-be530452b950",
+    "parent_doc_id": "2bae473b-0f63-4070-af93-52c1ee8e80ac",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 13,
+    "chunk_size": 386,
+    "content_preview": "Fig. 11. ITER-RETGEN [56] is a typical iterative structure. Multiple rounds of retrieval and generation are performed within the limit of the maximum number of iterations. Termination of the loop is d..."
+  },
+  {
+    "doc_id": "1a8eda85-bae4-4b0c-9bff-af6ffaecf231",
+    "parent_doc_id": "2bae473b-0f63-4070-af93-52c1ee8e80ac",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 13,
+    "chunk_size": 422,
+    "content_preview": "RAG flow of ToC [13]. A typical characteristic of this process is that each recursive retrieval uses the new query generated from the previous step, thereby progressively deepening analysis of the ori..."
+  },
+  {
+    "doc_id": "9b032daa-d8ab-4209-ad2e-0a68c2bd5bf3",
+    "parent_doc_id": "6c4a20dc-35f5-4204-a725-c3e73253484c",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 14,
+    "chunk_size": 66,
+    "content_preview": "Fig. 13. RAG flow of FLARE [14]. The generated provisional answer will undergo confidence assessment. If it does not meet the required confidence level, the process will return to the retrieval stage ..."
+  },
+  {
+    "doc_id": "0888f26e-ddb1-4eb5-8d4c-d37926343a63",
+    "parent_doc_id": "6c4a20dc-35f5-4204-a725-c3e73253484c",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 14,
+    "chunk_size": 424,
+    "content_preview": "First, it prompt GPT-4 to obtain a suitable instruct fine-tuning dataset to fine-tune the deployed open-source LLM. This allows the model to output four specific tokens during generation, which are us..."
+  },
+  {
+    "doc_id": "75edd123-30de-47ab-8f1c-0b200069d37d",
+    "parent_doc_id": "6c4a20dc-35f5-4204-a725-c3e73253484c",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 14,
+    "chunk_size": 242,
+    "content_preview": "Fine-tuning the retriever based on the results generated by LLM. \u00b7 LLM Reward RL. Still using the LLM output results as the supervisory signal. Employing reinforcement learning to align the retriever ..."
+  },
+  {
+    "doc_id": "6126f40d-da42-45c8-a900-51795e8047db",
+    "parent_doc_id": "c07575fd-7e1a-49c7-90c2-aaf8125357b6",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 15,
+    "chunk_size": 68,
+    "content_preview": "Fig. 16. Generator fine-tuning pattern, The main methods include SFT, distillation and RL from LLM/human feedback. Fig. 17. Dual fine-tuning pattern. In this mode, both the retriever and generator par..."
+  },
+  {
+    "doc_id": "2205bb0a-3e5d-4af1-8d18-fd24515e767f",
+    "parent_doc_id": "c07575fd-7e1a-49c7-90c2-aaf8125357b6",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 15,
+    "chunk_size": 299,
+    "content_preview": "VI. DISCUSSION In this chapter, we explore the innovative horizons opened by the modular RAG paradigm. We examine its compatibility with cutting-edge methodologies in the progression of RAG technology..."
+  },
+  {
+    "doc_id": "0c737540-3a8f-4e1f-a031-13b079bdadec",
+    "parent_doc_id": "c07575fd-7e1a-49c7-90c2-aaf8125357b6",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 15,
+    "chunk_size": 456,
+    "content_preview": "1) Recombination of the current modules: In this scenario, no new modules or operators are proposed; rather, specific problems are addressed through the combination of existing modules.DR-RAG [59] emp..."
+  },
+  {
+    "doc_id": "f2a6c53c-7b9b-4c36-96c9-0a82e987a9c8",
+    "parent_doc_id": "775e8db1-862a-4725-b3c5-9185d7bbef39",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 16,
+    "chunk_size": 460,
+    "content_preview": "VII. CONCLUSION RAG is emerging as a pivotal technology for LLM applications. As technological landscapes evolve and the intricacies of application requirements escalate, RAG systems are being enhance..."
+  },
+  {
+    "doc_id": "e401994b-4cc8-4fee-be68-a8afe8119b0a",
+    "parent_doc_id": "775e8db1-862a-4725-b3c5-9185d7bbef39",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 16,
+    "chunk_size": 583,
+    "content_preview": "9, pp. 10 345-10 425, 2023. [9] F. Cuconasu, G. Trappolini, F. Siciliano, S. Filice, C. Campagnano, Y. Maarek, N. Tonellotto, and F. Silvestri, 'The power of noise: Redefining retrieval for rag system..."
+  },
+  {
+    "doc_id": "eabd6714-26fb-4ac1-a4b4-c65e1fbba23b",
+    "parent_doc_id": "775e8db1-862a-4725-b3c5-9185d7bbef39",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 16,
+    "chunk_size": 212,
+    "content_preview": "202-209. [Online]. Available: https://aclanthology.org/2022.amta-upg.14 [26] L. Luo, Y.-F. Li, G. Haffari, and S. Pan, 'Reasoning on graphs: Faithful and interpretable large language model reasoning,'..."
+  },
+  {
+    "doc_id": "b1374879-b704-46e0-99ef-04d0fdc8684e",
+    "parent_doc_id": "f50e4e88-3a7e-4230-b23e-ecff578491ea",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 17,
+    "chunk_size": 471,
+    "content_preview": "[34] Y. Wang, N. Lipka, R. A. Rossi, A. Siu, R. Zhang, and T. Derr, 'Knowledge graph prompting for multi-document question answering,' arXiv preprint arXiv:2308.11730 , 2023. [35] D. Zhou, N. Sch\u00a8 arl..."
+  },
+  {
+    "doc_id": "94454466-2a2c-445f-8360-2e37e3189bd9",
+    "parent_doc_id": "f50e4e88-3a7e-4230-b23e-ecff578491ea",
+    "content_type": "text",
+    "source": "s3://multi-agent-rag-data/document/modular rag research.pdf",
+    "page_number": 17,
+    "chunk_size": 391,
+    "content_preview": "[49] J. Cui, Z. Li, Y. Yan, B. Chen, and L. Yuan, 'Chatlaw: Open-source legal large language model with integrated external knowledge bases,' arXiv preprint arXiv:2306.16092 , 2023. [50] T. Schick, J...."
+  }
+]
